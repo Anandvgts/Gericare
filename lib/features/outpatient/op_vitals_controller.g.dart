@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'consultation_controller.dart';
+part of 'op_vitals_controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$consultationControllerHash() =>
-    r'98b30e005be66a62029858b8bf3bb1cd51e92152';
+String _$opVitalsControllerHash() =>
+    r'919edd12c4117a754a2538844e23d19e10029854';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -30,39 +30,39 @@ class _SystemHash {
   }
 }
 
-abstract class _$ConsultationController
+abstract class _$OpVitalsController
     extends BuildlessAutoDisposeNotifier<AsyncValue<void>> {
-  late final String patientId;
+  late final String consultationId;
 
   AsyncValue<void> build(
-    String patientId,
+    String consultationId,
   );
 }
 
-/// See also [ConsultationController].
-@ProviderFor(ConsultationController)
-const consultationControllerProvider = ConsultationControllerFamily();
+/// See also [OpVitalsController].
+@ProviderFor(OpVitalsController)
+const opVitalsControllerProvider = OpVitalsControllerFamily();
 
-/// See also [ConsultationController].
-class ConsultationControllerFamily extends Family<AsyncValue<void>> {
-  /// See also [ConsultationController].
-  const ConsultationControllerFamily();
+/// See also [OpVitalsController].
+class OpVitalsControllerFamily extends Family<AsyncValue<void>> {
+  /// See also [OpVitalsController].
+  const OpVitalsControllerFamily();
 
-  /// See also [ConsultationController].
-  ConsultationControllerProvider call(
-    String patientId,
+  /// See also [OpVitalsController].
+  OpVitalsControllerProvider call(
+    String consultationId,
   ) {
-    return ConsultationControllerProvider(
-      patientId,
+    return OpVitalsControllerProvider(
+      consultationId,
     );
   }
 
   @override
-  ConsultationControllerProvider getProviderOverride(
-    covariant ConsultationControllerProvider provider,
+  OpVitalsControllerProvider getProviderOverride(
+    covariant OpVitalsControllerProvider provider,
   ) {
     return call(
-      provider.patientId,
+      provider.consultationId,
     );
   }
 
@@ -78,82 +78,82 @@ class ConsultationControllerFamily extends Family<AsyncValue<void>> {
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'consultationControllerProvider';
+  String? get name => r'opVitalsControllerProvider';
 }
 
-/// See also [ConsultationController].
-class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
-    ConsultationController, AsyncValue<void>> {
-  /// See also [ConsultationController].
-  ConsultationControllerProvider(
-    String patientId,
+/// See also [OpVitalsController].
+class OpVitalsControllerProvider extends AutoDisposeNotifierProviderImpl<
+    OpVitalsController, AsyncValue<void>> {
+  /// See also [OpVitalsController].
+  OpVitalsControllerProvider(
+    String consultationId,
   ) : this._internal(
-          () => ConsultationController()..patientId = patientId,
-          from: consultationControllerProvider,
-          name: r'consultationControllerProvider',
+          () => OpVitalsController()..consultationId = consultationId,
+          from: opVitalsControllerProvider,
+          name: r'opVitalsControllerProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$consultationControllerHash,
-          dependencies: ConsultationControllerFamily._dependencies,
+                  : _$opVitalsControllerHash,
+          dependencies: OpVitalsControllerFamily._dependencies,
           allTransitiveDependencies:
-              ConsultationControllerFamily._allTransitiveDependencies,
-          patientId: patientId,
+              OpVitalsControllerFamily._allTransitiveDependencies,
+          consultationId: consultationId,
         );
 
-  ConsultationControllerProvider._internal(
+  OpVitalsControllerProvider._internal(
     super._createNotifier, {
     required super.name,
     required super.dependencies,
     required super.allTransitiveDependencies,
     required super.debugGetCreateSourceHash,
     required super.from,
-    required this.patientId,
+    required this.consultationId,
   }) : super.internal();
 
-  final String patientId;
+  final String consultationId;
 
   @override
   AsyncValue<void> runNotifierBuild(
-    covariant ConsultationController notifier,
+    covariant OpVitalsController notifier,
   ) {
     return notifier.build(
-      patientId,
+      consultationId,
     );
   }
 
   @override
-  Override overrideWith(ConsultationController Function() create) {
+  Override overrideWith(OpVitalsController Function() create) {
     return ProviderOverride(
       origin: this,
-      override: ConsultationControllerProvider._internal(
-        () => create()..patientId = patientId,
+      override: OpVitalsControllerProvider._internal(
+        () => create()..consultationId = consultationId,
         from: from,
         name: null,
         dependencies: null,
         allTransitiveDependencies: null,
         debugGetCreateSourceHash: null,
-        patientId: patientId,
+        consultationId: consultationId,
       ),
     );
   }
 
   @override
-  AutoDisposeNotifierProviderElement<ConsultationController, AsyncValue<void>>
+  AutoDisposeNotifierProviderElement<OpVitalsController, AsyncValue<void>>
       createElement() {
-    return _ConsultationControllerProviderElement(this);
+    return _OpVitalsControllerProviderElement(this);
   }
 
   @override
   bool operator ==(Object other) {
-    return other is ConsultationControllerProvider &&
-        other.patientId == patientId;
+    return other is OpVitalsControllerProvider &&
+        other.consultationId == consultationId;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, patientId.hashCode);
+    hash = _SystemHash.combine(hash, consultationId.hashCode);
 
     return _SystemHash.finish(hash);
   }
@@ -161,19 +161,20 @@ class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
-mixin ConsultationControllerRef
+mixin OpVitalsControllerRef
     on AutoDisposeNotifierProviderRef<AsyncValue<void>> {
-  /// The parameter `patientId` of this provider.
-  String get patientId;
+  /// The parameter `consultationId` of this provider.
+  String get consultationId;
 }
 
-class _ConsultationControllerProviderElement
-    extends AutoDisposeNotifierProviderElement<ConsultationController,
-        AsyncValue<void>> with ConsultationControllerRef {
-  _ConsultationControllerProviderElement(super.provider);
+class _OpVitalsControllerProviderElement
+    extends AutoDisposeNotifierProviderElement<OpVitalsController,
+        AsyncValue<void>> with OpVitalsControllerRef {
+  _OpVitalsControllerProviderElement(super.provider);
 
   @override
-  String get patientId => (origin as ConsultationControllerProvider).patientId;
+  String get consultationId =>
+      (origin as OpVitalsControllerProvider).consultationId;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

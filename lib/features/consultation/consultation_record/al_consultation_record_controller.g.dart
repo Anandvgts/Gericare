@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'consultation_controller.dart';
+part of 'al_consultation_record_controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$consultationControllerHash() =>
-    r'98b30e005be66a62029858b8bf3bb1cd51e92152';
+String _$alConsultationRecordControllerHash() =>
+    r'c36dca234728ead79aa6d9e3cc88e5b352a215a0';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -30,7 +30,7 @@ class _SystemHash {
   }
 }
 
-abstract class _$ConsultationController
+abstract class _$AlConsultationRecordController
     extends BuildlessAutoDisposeNotifier<AsyncValue<void>> {
   late final String patientId;
 
@@ -39,27 +39,28 @@ abstract class _$ConsultationController
   );
 }
 
-/// See also [ConsultationController].
-@ProviderFor(ConsultationController)
-const consultationControllerProvider = ConsultationControllerFamily();
+/// See also [AlConsultationRecordController].
+@ProviderFor(AlConsultationRecordController)
+const alConsultationRecordControllerProvider =
+    AlConsultationRecordControllerFamily();
 
-/// See also [ConsultationController].
-class ConsultationControllerFamily extends Family<AsyncValue<void>> {
-  /// See also [ConsultationController].
-  const ConsultationControllerFamily();
+/// See also [AlConsultationRecordController].
+class AlConsultationRecordControllerFamily extends Family<AsyncValue<void>> {
+  /// See also [AlConsultationRecordController].
+  const AlConsultationRecordControllerFamily();
 
-  /// See also [ConsultationController].
-  ConsultationControllerProvider call(
+  /// See also [AlConsultationRecordController].
+  AlConsultationRecordControllerProvider call(
     String patientId,
   ) {
-    return ConsultationControllerProvider(
+    return AlConsultationRecordControllerProvider(
       patientId,
     );
   }
 
   @override
-  ConsultationControllerProvider getProviderOverride(
-    covariant ConsultationControllerProvider provider,
+  AlConsultationRecordControllerProvider getProviderOverride(
+    covariant AlConsultationRecordControllerProvider provider,
   ) {
     return call(
       provider.patientId,
@@ -78,30 +79,31 @@ class ConsultationControllerFamily extends Family<AsyncValue<void>> {
       _allTransitiveDependencies;
 
   @override
-  String? get name => r'consultationControllerProvider';
+  String? get name => r'alConsultationRecordControllerProvider';
 }
 
-/// See also [ConsultationController].
-class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
-    ConsultationController, AsyncValue<void>> {
-  /// See also [ConsultationController].
-  ConsultationControllerProvider(
+/// See also [AlConsultationRecordController].
+class AlConsultationRecordControllerProvider
+    extends AutoDisposeNotifierProviderImpl<AlConsultationRecordController,
+        AsyncValue<void>> {
+  /// See also [AlConsultationRecordController].
+  AlConsultationRecordControllerProvider(
     String patientId,
   ) : this._internal(
-          () => ConsultationController()..patientId = patientId,
-          from: consultationControllerProvider,
-          name: r'consultationControllerProvider',
+          () => AlConsultationRecordController()..patientId = patientId,
+          from: alConsultationRecordControllerProvider,
+          name: r'alConsultationRecordControllerProvider',
           debugGetCreateSourceHash:
               const bool.fromEnvironment('dart.vm.product')
                   ? null
-                  : _$consultationControllerHash,
-          dependencies: ConsultationControllerFamily._dependencies,
+                  : _$alConsultationRecordControllerHash,
+          dependencies: AlConsultationRecordControllerFamily._dependencies,
           allTransitiveDependencies:
-              ConsultationControllerFamily._allTransitiveDependencies,
+              AlConsultationRecordControllerFamily._allTransitiveDependencies,
           patientId: patientId,
         );
 
-  ConsultationControllerProvider._internal(
+  AlConsultationRecordControllerProvider._internal(
     super._createNotifier, {
     required super.name,
     required super.dependencies,
@@ -115,7 +117,7 @@ class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
 
   @override
   AsyncValue<void> runNotifierBuild(
-    covariant ConsultationController notifier,
+    covariant AlConsultationRecordController notifier,
   ) {
     return notifier.build(
       patientId,
@@ -123,10 +125,10 @@ class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
   }
 
   @override
-  Override overrideWith(ConsultationController Function() create) {
+  Override overrideWith(AlConsultationRecordController Function() create) {
     return ProviderOverride(
       origin: this,
-      override: ConsultationControllerProvider._internal(
+      override: AlConsultationRecordControllerProvider._internal(
         () => create()..patientId = patientId,
         from: from,
         name: null,
@@ -139,14 +141,14 @@ class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
   }
 
   @override
-  AutoDisposeNotifierProviderElement<ConsultationController, AsyncValue<void>>
-      createElement() {
-    return _ConsultationControllerProviderElement(this);
+  AutoDisposeNotifierProviderElement<AlConsultationRecordController,
+      AsyncValue<void>> createElement() {
+    return _AlConsultationRecordControllerProviderElement(this);
   }
 
   @override
   bool operator ==(Object other) {
-    return other is ConsultationControllerProvider &&
+    return other is AlConsultationRecordControllerProvider &&
         other.patientId == patientId;
   }
 
@@ -161,19 +163,20 @@ class ConsultationControllerProvider extends AutoDisposeNotifierProviderImpl<
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
-mixin ConsultationControllerRef
+mixin AlConsultationRecordControllerRef
     on AutoDisposeNotifierProviderRef<AsyncValue<void>> {
   /// The parameter `patientId` of this provider.
   String get patientId;
 }
 
-class _ConsultationControllerProviderElement
-    extends AutoDisposeNotifierProviderElement<ConsultationController,
-        AsyncValue<void>> with ConsultationControllerRef {
-  _ConsultationControllerProviderElement(super.provider);
+class _AlConsultationRecordControllerProviderElement
+    extends AutoDisposeNotifierProviderElement<AlConsultationRecordController,
+        AsyncValue<void>> with AlConsultationRecordControllerRef {
+  _AlConsultationRecordControllerProviderElement(super.provider);
 
   @override
-  String get patientId => (origin as ConsultationControllerProvider).patientId;
+  String get patientId =>
+      (origin as AlConsultationRecordControllerProvider).patientId;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

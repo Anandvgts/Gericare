@@ -108,17 +108,17 @@ class ConsultationController extends _$ConsultationController {
   }
 
   void onConsultationTap() {
-    // navigationService.pushNamed(
-    //   Routes.consultationRecord,
-    //   arguments: patientId,
-    // );
+    navigationService.pushNamed(
+      Routes.consultationRecord,
+      arguments: patientId,
+    );
   }
 
   void onViewHistoryTap() {
-    // navigationService.pushNamed(
-    //   Routes.consultationHistory,
-    //   arguments: patientId,
-    // );
+    navigationService.pushNamed(
+      Routes.consultationHistory,
+      arguments: patientId,
+    );
   }
 
   void onCaseSheetTap() {
