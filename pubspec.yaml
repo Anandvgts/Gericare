@@ -1,0 +1,43 @@
+name: doctor
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  shared_preferences: ^2.5.4
+  fluttertoast: ^9.0.0
+  dio: ^5.9.0
+  pretty_dio_logger: ^1.4.0
+  equatable: ^2.0.8
+  flutter_svg: ^2.0.10
+  intl: ^0.20.2
+  mobile_scanner: ^7.1.4
+  connectivity_plus: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.0
+  riverpod_generator: ^2.4.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/auth/
+    - assets/main/
+    - assets/main/case_sheet/
+    - assets/main/consultation/
